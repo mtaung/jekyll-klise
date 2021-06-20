@@ -6,9 +6,18 @@
   url: /archive/
   external: false
 
+- title: github
+  url: https://github.com/mtaung
+  external: true
+
+- title: scholar
+  url: https://scholar.google.co.uk/citations?user=UT0kXA0AAAAJ&hl=en
+  external: true
+
 - title: about
   url: /about/
   external: false # set true if you using external link, see below
+
 
 # Example:
 # - title: github

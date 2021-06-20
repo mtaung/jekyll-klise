@@ -51,9 +51,7 @@ layout: compress
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
               {{ page.date | date: "%b %d, %Y" }}
             </time>
-            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <span itemprop="name">{{ site.author.name }}</span>
-            </span>
+            <span hidden itemprop="ttr"></span>{% include reading-time.html %}</span>
             <time hidden datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">
               {{ page.date | date: "%b %d, %Y" }}
             </time>
@@ -61,6 +59,7 @@ layout: compress
             <span hidden itemprop="image">{{ page.image }}</span>
             <span hidden itemprop="mainEntityOfPage">{{ page.excerpt }}</span>
           </div>
+          
           {% endif %}
         </header>
 
@@ -87,8 +86,9 @@ layout: compress
       {% include navigation.html %}
     {% endif %}
 
-    {% include footer.html %}
+   
   </div>
 </body>
 
+{% include footer.html %}
 </html>

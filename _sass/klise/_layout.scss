@@ -217,6 +217,7 @@
 
 // Content
 .posts-item-note {
+  font-family: $mono-family;
   font-size: $base-font-size;
   font-weight: 700;
   margin-bottom: 5px;
@@ -235,6 +236,7 @@
   }
 
   .post-item-date {
+    font-family: $mono-family;
     min-width: 96px;
     color: $black;
     font-weight: 700;
